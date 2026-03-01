@@ -1,0 +1,16 @@
+
+
+public class TemperatureConverter {
+
+    public double fahrenheitToCelsius(double fahrenheit) {
+        return  (fahrenheit - 32) * 5 / 9;
+    }
+
+    public double celsiusToFahrenheit(double celsius) {
+        return Math.round((celsius * 9 / 5) + 32);
+    }
+
+    public boolean isExtremeTemperature(double temperature) {
+        return temperature < -40.0 || temperature > 50.0;
+    }
+}
